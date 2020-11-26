@@ -5,11 +5,12 @@
   <title>Key Detection</title>
   <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
 </head>
-Please type: hello
+
+<div id="message" style="text-align:center">Please type: hello</div>
 <body>
 <script>
 const pressed = [];
-const secretCode = 'Hello';
+const secretCode = 'hello';
 
 window.addEventListener('keyup', (e) => {
   console.log(e.key);
@@ -23,4 +24,12 @@ window.addEventListener('keyup', (e) => {
 });
 </script>
 </body>
+<style>
+  #message {
+    margin-top: 10vh;
+    justify-content: center;
+    color: blue;
+    font-size: 5vh;
+} 
+</style>
 </html>
